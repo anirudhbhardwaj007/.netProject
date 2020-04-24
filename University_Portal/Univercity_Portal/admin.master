@@ -1,0 +1,128 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="admin.master.cs" Inherits="admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+</head>
+<body BGCOLOR="#FFFFCC">
+    <form id="form1" runat="server">
+    <div>
+        &nbsp;<div style="text-align: center">
+            &nbsp;<div style="text-align: center">
+                &nbsp;<table>
+                    <tr>
+                        <td align="right" colspan="6" style="width: 100px; background-color: #990000">
+                            <div dir="rtl" style="width: 118px; height: 1px">
+                                &nbsp;&nbsp;
+                                <asp:HyperLink ID="HyperLink12" runat="server" Font-Bold="True" Font-Size="Smaller"
+                                ForeColor="#FFFFCC" NavigateUrl="~/USERHOME.aspx">SIGNOUT</asp:HyperLink>&nbsp;
+                            <asp:HyperLink ID="HyperLink11" runat="server" Font-Bold="True" Font-Size="Smaller"
+                                ForeColor="#FFFFCC" NavigateUrl="~/admin.aspx">HOME</asp:HyperLink></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="6" style="width: 100px; background-color: #990000">
+                            <span style="font-size: 24pt; color: #ffffcc; text-decoration: underline"><strong>
+                                <asp:Label ID="Label1" runat="server" Text="UNIVERSITY PORTAL" Width="583px"></asp:Label><br />
+                            </strong></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 100px; background-color: #990000">
+                            <asp:HyperLink ID="HyperLink1" runat="server" BackColor="#990000" Font-Size="12pt"
+                                ForeColor="#FFE0C0" NavigateUrl="~/ADDSTATE.aspx" Width="150px">ADD STATE</asp:HyperLink></td>
+                        <td colspan="4" rowspan="12">
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>
+                        </td>
+                        <td rowspan="15" style="width: 100px">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 100px; background-color: #990000">
+                            <asp:HyperLink ID="HyperLink6" runat="server" BackColor="#990000" Font-Size="12pt"
+                                ForeColor="#FFE0C0" NavigateUrl="~/ADDCITY.aspx" Width="150px">ADD CITY</asp:HyperLink></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 100px; background-color: #990000">
+                            <asp:HyperLink ID="HyperLink4" runat="server" BackColor="#990000" Font-Size="12pt"
+                                ForeColor="#FFE0C0" NavigateUrl="~/ADDUNIVER.aspx" Width="150px">ADD UNIVERSITY</asp:HyperLink></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 100px; background-color: #990000">
+                            <asp:HyperLink ID="HyperLink7" runat="server" BackColor="#990000" Font-Size="12pt"
+                                ForeColor="#FFE0C0" NavigateUrl="~/ADDCOLLEGE.aspx" Width="150px">ADD COLLEGE</asp:HyperLink></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 100px; background-color: #990000">
+                            <asp:HyperLink ID="HyperLink5" runat="server" BackColor="#990000" Font-Size="12pt"
+                                ForeColor="#FFE0C0" NavigateUrl="~/ADDSUBCOLL.aspx" Width="150px">ADD SUB COLLEGE</asp:HyperLink></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 100px; background-color: #990000">
+                            <asp:HyperLink ID="HyperLink15" runat="server" BackColor="#990000" Font-Size="12pt"
+                                ForeColor="#FFE0C0" NavigateUrl="~/INSERT FACULTY.aspx" Width="150px">INSERT FACULTY</asp:HyperLink></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 100px; background-color: #990000; height: 21px;">
+                            <asp:HyperLink ID="HyperLink2" runat="server" BackColor="#990000" Font-Size="12pt"
+                                ForeColor="#FFE0C0" NavigateUrl="~/ADDCOURSE.aspx" Width="150px">ADD COURSE</asp:HyperLink></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 100px; background-color: #990000">
+                            <asp:HyperLink ID="HyperLink16" runat="server" BackColor="#990000" Font-Size="12pt"
+                                ForeColor="#FFE0C0" NavigateUrl="~/Addfeestucture.aspx" Width="150px">FEESTRUCTURE</asp:HyperLink></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 100px; background-color: #990000">
+                            <asp:HyperLink ID="HyperLink3" runat="server" BackColor="#990000" Font-Size="12pt"
+                                ForeColor="#FFE0C0" NavigateUrl="~/ADDBRANCH.aspx" Width="150px">ADD BRANCH</asp:HyperLink></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 100px; background-color: #990000">
+                            <asp:HyperLink ID="HyperLink13" runat="server" BackColor="#990000" Font-Size="12pt"
+                                ForeColor="#FFE0C0" NavigateUrl="~/ADDSEM.aspx" Width="150px">ADD SEMISTER</asp:HyperLink></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 100px; background-color: #990000">
+                            <asp:HyperLink ID="HyperLink14" runat="server" BackColor="#990000" Font-Size="12pt"
+                                ForeColor="#FFE0C0" NavigateUrl="~/insertresult.aspx" Width="150px">INSERT RESULT</asp:HyperLink></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 100px; background-color: #990000">
+                            <asp:HyperLink ID="HyperLink8" runat="server" BackColor="#990000" Font-Size="12pt"
+                                ForeColor="#FFE0C0" NavigateUrl="~/USERDETAIL.aspx" Width="150px">USER DETAIL</asp:HyperLink></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 100px; height: 21px; background-color: #990000">
+                            <asp:HyperLink ID="HyperLink10" runat="server" BackColor="#990000" Font-Size="12pt"
+                                ForeColor="#FFE0C0" NavigateUrl="~/NEWS.aspx" Width="150px">ADD NEWS</asp:HyperLink></td>
+                        <td colspan="4" rowspan="2">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 100px; background-color: #990000">
+                            <asp:HyperLink ID="HyperLink9" runat="server" BackColor="#990000" Font-Size="12pt"
+                                ForeColor="#FFE0C0" NavigateUrl="~/ADMINCOLLDETAIL.aspx" Width="150px">COLLEGE DETAIL</asp:HyperLink></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 100px; background-color: #990000">
+                            <asp:HyperLink ID="HyperLink17" runat="server" ForeColor="#FFE0C0" NavigateUrl="~/backsubst.aspx">ADD BACK RESULT</asp:HyperLink></td>
+                        <td style="width: 100px">
+                        </td>
+                        <td style="width: 100px">
+                        </td>
+                        <td style="width: 100px">
+                        </td>
+                        <td style="width: 100px">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="user.master.cs" Inherits="user" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+</head>
+<body BGCOLOR="#FFFFCC" >
+    <form id="form1" runat="server">
+    <div>
+        &nbsp;<div style="text-align: center">
+            <table border="2">
+                <tr>
+                    <td align="right" colspan="3" style="height: 23px; background-color: #990000;">
+                        <asp:Label ID="lbluser" runat="server" Font-Bold="True" ForeColor="#FFFFCC"></asp:Label>
+                        <span style="color: #ffffcc">||</span>
+                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/USERHOME.aspx" Font-Bold="True" ForeColor="#FFFFCC">SignOut</asp:HyperLink></td>
+                </tr>
+                <tr>
+                    <td colspan="3" style="background-color: #990000">
+                        <span style="font-size: 32pt; color: #ffffcc"><strong>PORTAL</strong></span></td>
+                </tr>
+                <tr>
+                    <td colspan="3" rowspan="1" style="background-color: #990000">
+                        <asp:LinkButton ID="lnksetting" runat="server" Font-Bold="True" Font-Size="10pt"
+                            ForeColor="#FFE0C0" OnClick="lnksetting_Click" Width="116px">Setting</asp:LinkButton><asp:LinkButton
+                                ID="lnkProfile" runat="server" Font-Bold="True" Font-Size="10pt" ForeColor="#FFE0C0"
+                                OnClick="lnkProfile_Click" Width="116px">Security</asp:LinkButton><asp:LinkButton
+                                    ID="lnksearch" runat="server" Font-Bold="True" Font-Size="10pt" ForeColor="#FFE0C0"
+                                    OnClick="lnksearch_Click" Width="116px">Search Friend</asp:LinkButton><asp:LinkButton
+                                        ID="lbluni" runat="server" Font-Bold="True" Font-Size="10pt" ForeColor="#FFE0C0"
+                                        OnClick="LinkButton1_Click" Width="116px">All University</asp:LinkButton>
+                        <asp:LinkButton ID="lnkbackres" runat="server" Font-Bold="True" ForeColor="#FFE0C0"
+                            OnClick="lnkbackres_Click">Back Result</asp:LinkButton></td>
+                </tr>
+                <tr>
+                    <td rowspan="2" style="width: 102px">
+                        <img alt="RGTU" src="img/RGTU.jpg" height="150" width="200" /><br />
+                        &nbsp;<asp:LinkButton ID="LinkButton1" runat="server" Height="21px" OnClick="LinkButton1_Click1"
+                            Width="115px">RGPV</asp:LinkButton>
+                        <img alt="SAGAR" src="img/SAGAR.jpg" height="150" width="200" /><br />
+                        Sagar<br />
+                        <img alt="Barkatullah " height="150" src="img/Barkatullah%20University.JPG" width="200" id="IMG1" /><br />
+                        Barkatullah<img alt="Pune University" height="150" src="img/Pune%20Universty.jpg"
+                            width="200" /><br />
+                        Pune
+                    </td>
+                    <td style="width: 100px; height: 274px;">
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>
+                        &nbsp;
+                        <br />
+                    </td>
+                    <td rowspan="2" style="width: 100px">
+                        <img alt="bhoj" src="img/bhoj.jpg" height="150" width="200" /><br />
+                        BHOJ<br />
+                        <img alt="Makhanlal" src="img/Makhanlal.jpg" height="150" width="200" /><br />
+                        Makhanlal<br />
+                        <img alt="Banglor University" height="150" src="img/Banglor%20University.jpg" width="200" /><br />
+                        Banglor
+                        <img alt="Nalanda University" height="150" src="img/Nalanda_University.jpg" width="200" /><br />
+                        Nalanda</td>
+                </tr>
+                <tr>
+                    <td style="width: 100px; background-color: #990000;">
+                        <strong><span style="font-size: 32pt; color: #ffffcc"></span></strong></td>
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+  
+</head>
+<body BGCOLOR="#FFFFCC" style="font-size: 12pt">
+<center>
+    <form id="form1" runat="server">
+    <div>
+        <table border="1" style="width: 608px; height: 551px">
+            <tr>
+                <td align="right" colspan="5" style="background-color: #990000; height: 5px;">
+                    <strong><span style="font-family: Courier New CYR">&nbsp; </span></strong>
+                    <a href="USERHOME.aspx"><strong><span style="font-family: Courier New CYR; color: #ffffcc;">
+                        HOME</span></strong></A><span style="color: #ffffff"> |</span><A href="COLL_LIST.aspx" ><strong><span
+                            style="font-family: Courier New CYR; color: #ffffcc;">COLLEGES</span></strong></A><span
+                                style="color: #ffffff"> </span></td>
+            </tr>
+            <tr style="font-size: 12pt; font-family: Times New Roman">
+                <td colspan="5"  style="height: 57px; background-color: #990000;">
+                    <span style="font-size: 32pt; color: #ffffcc; font-family: Verdana"><strong>&nbsp;UNIVERSITY
+                        PORTAL</strong></span></td>
+            </tr>
+            <tr style="font-size: 12pt; font-family: Times New Roman">
+                <td rowspan="4" style="width: 97px" align="center">
+                    &nbsp; <span style="font-size: 16pt; color: #660066; font-family: Nina"><strong dir="ltr">
+                        &nbsp;MASTER_LOGIN</strong></span><asp:Login ID="Login1" runat="server" BackColor="#FFFFCC"
+                            BorderColor="#C04000" BorderPadding="4" BorderStyle="Solid" BorderWidth="1px"
+                            Font-Names="Verdana" Font-Size="0.8em" ForeColor="#333333" OnAuthenticate="Login1_Authenticate" Width="218px" Height="159px" UserNameLabelText="E-mail:">
+                            <TitleTextStyle BackColor="#990000" Font-Bold="True" Font-Size="0.9em" ForeColor="White" />
+                            <InstructionTextStyle Font-Italic="True" ForeColor="Black" />
+                            <TextBoxStyle Font-Size="0.8em" />
+                            <LoginButtonStyle BackColor="White" BorderColor="#CC9966" BorderStyle="Solid" BorderWidth="1px"
+                                Font-Names="Verdana" Font-Size="0.8em" ForeColor="#990000" />
+                        </asp:Login>
+                    &nbsp;<br />
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;OR&nbsp;<br />
+                    <br />
+                    <asp:HyperLink ID="HyperLink1" runat="server" BackColor="#990000" BorderColor="#FF8000"
+                        BorderStyle="Double" BorderWidth="1px" Font-Bold="True" Font-Size="14pt" ForeColor="#FFFF99" Width="226px" NavigateUrl="~/REGISTRATION.aspx">NEW USER</asp:HyperLink><br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <div style="width: 200px; height: 199px">
+                        <span style="font-size: 16pt; color: #660066; font-family: Nina"></span>&nbsp; &nbsp;
+                        &nbsp; &nbsp;&nbsp;<strong><span style="color: #ff9966"><img src="img/svsLogo.gif" /></span></strong></div>
+                    &nbsp;&nbsp;
+                </td>
+                <td colspan="3" rowspan="3" style="height: 192px; font-size: 12pt; width: 643px;">
+                     <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+                         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br />
+                         <br />
+                         <br />
+                         <br />
+                         <br />
+                         <br />
+                         <br />
+                         <br />
+                         <br />
+                         <br />
+                         <br />
+                         <br />
+                         <br />
+                         <br />
+                         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                         &nbsp;<br />
+                         <br />
+                         <br />
+                         <br />
+                         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</asp:contentplaceholder></td>
+                <td rowspan="4" style="width: 104px; font-size: 12pt;">
+                    &nbsp; &nbsp;<span style="font-size: 16pt; color: #660066; font-family: Nina"><strong dir="ltr">CALANDER</strong></span>
+                    <asp:Calendar ID="Calendar1" runat="server" BackColor="#FFFFCC" BorderColor="White"
+                        BorderWidth="1px" Font-Names="Verdana" Font-Size="9pt"
+                        ForeColor="Black" Height="163px" Width="238px" NextPrevFormat="FullMonth">
+                        <SelectedDayStyle BackColor="#333399" ForeColor="White" />
+                        <TodayDayStyle BackColor="#CCCCCC" />
+                        <OtherMonthDayStyle ForeColor="#999999" />
+                        <NextPrevStyle Font-Size="8pt" ForeColor="#333333" Font-Bold="True" VerticalAlign="Bottom" />
+                        <DayHeaderStyle Font-Bold="True" Font-Size="8pt" />
+                        <TitleStyle BackColor="White" Font-Bold="True" Font-Size="12pt" ForeColor="#333399" BorderColor="Black" BorderWidth="4px" />
+                    </asp:Calendar>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    &nbsp;<div style="width: 240px; height: 204px">
+                        <img src="img/iCentralDesktopHome1.jpg" style="width: 231px; height: 198px" /></div>
+                </td>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+                <td colspan="3" style="height: 77px; width: 643px; background-color: #990000;">
+                    <strong><span style="font-size: 32pt; color: #ffffcc; font-family: Verdana">
+                        <img src="img/MITengineering.jpg" style="width: 100%; height: 71px" /></span></strong></td>
+            </tr>
+        </table>
+       
+    </div>
+    </form>
+    </center>
+    <br />
+    <div style="text-align: center">
+        &nbsp;</div>
+</body>
+</html>
